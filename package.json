@@ -1,0 +1,32 @@
+{
+	"name": "latte_run_shell",
+	"version": "0.0.1",
+	"description": "latte_run_shell",
+	"keywords": [
+		"latte",
+		"latte_run_shell"
+	],
+	"author": "qiongtubao",
+	"main": "lib/index.js",
+	"scripts": {
+		"test:all": "latte mocha -r ts-node/register ./tests/*test.ts",
+		"dev": "ts-node tests/index.ts"
+	
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/qiongtubao/latte_run_shell.git"
+	},
+	"dependencies": {
+		"latte_lib": "*"
+	},
+	"devDependencies": {
+		"chai": "*",
+		"mocha": "*",
+		"ts-node": "*",
+		"typescript": "*",
+		"should": "*",
+		"@types/mocha": "*",
+		"@types/node": "*"
+	}
+}
