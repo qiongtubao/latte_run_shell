@@ -17,7 +17,7 @@ class Shell {
             this.data(data)
         })
         this.process.stderr.on("data", (data)=> {
-            console.log(data)
+            console.log(data.toString())
             //this.error(data)
         })
         this.process.on('close', (code) => {
