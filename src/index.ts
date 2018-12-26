@@ -17,7 +17,7 @@ class Shell {
             this.data(data)
         })
         this.process.stderr.on("data", (data)=> {
-            console.log("收到error", data)
+            console.log(data)
             //this.error(data)
         })
         this.process.on('close', (code) => {
